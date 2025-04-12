@@ -2,8 +2,8 @@ import { HomeIcon, NotebookIcon } from "lucide-react";
 import { Icons } from "@/components/ui/icons";
 
 export const DATA = {
-  name: "John Doe",
-  initials: "DV",
+  name: "Nishant Patil",
+  initials: "NP",
   url: "https://dillion.io",
   location: "San Francisco, CA",
   locationLink: "https://www.google.com/maps/place/sanfrancisco",
@@ -54,12 +54,12 @@ export const DATA = {
 
         navbar: true,
       },
-      Youtube: {
-        name: "Youtube",
-        url: "https://dub.sh/dillion-youtube",
-        icon: Icons.youtube,
-        navbar: true,
-      },
+      // Youtube: {
+      //   name: "Youtube",
+      //   url: "https://dub.sh/dillion-youtube",
+      //   icon: Icons.youtube,
+      //   navbar: true,
+      // },
       email: {
         name: "Send Email",
         url: "#",
@@ -113,7 +113,6 @@ export const DATA = {
       start: "2016",
       end: "2021",
     },
-    
   ],
   projects: [
     {
@@ -156,8 +155,7 @@ export const DATA = {
         "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/firstnet.png",
       links: [],
     },
-    
-    
+
     {
       title: "Waterloo Equithon",
       dates: "May 5th - 7th, 2017",
@@ -184,6 +182,40 @@ export const DATA = {
         },
       ],
     },
-    
+  ],
+  hackathons: [
+    {
+      title: "Hack Western 5",
+      dates: "November 23rd - 25th, 2018",
+      location: "London, Ontario",
+      description:
+        "Developed a mobile application which delivered bedtime stories to children using augmented reality.",
+      image:
+        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/hack-western.png",
+      mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg",
+      links: [],
+    },
+    {
+      title: "Hack The North",
+      dates: "September 14th - 16th, 2018",
+      location: "Waterloo, Ontario",
+      description:
+        "Developed a mobile application which delivers university campus wide events in real time to all students.",
+      image:
+        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/hack-the-north.png",
+      mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg",
+      links: [],
+    },
+    {
+      title: "FirstNet Public Safety Hackathon",
+      dates: "March 23rd - 24th, 2018",
+      location: "San Francisco, California",
+      description:
+        "Developed a mobile application which communcicates a victims medical data from inside an ambulance to doctors at hospital.",
+      icon: "public",
+      image:
+        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/firstnet.png",
+      links: [],
+    },
   ],
 };

@@ -1,10 +1,18 @@
 import "./globals.css";
-import { Inter, FontSans } from "next/font/google";
+import { Inter, Roboto } from "next/font/google";
 import { DATA } from "@/data/resume";
+import { TooltipProvider } from "@/components/ui/tooltip";
+import { Navbar } from "@/components/navbar";
+import { ThemeProvider } from "@/components/themeprovider";
 
-const fontSans = FontSans({
+const fontSans = Roboto({
   subsets: ["latin"],
   variable: "--font-sans",
+});
+
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
 });
 
 export const metadata = {
@@ -47,9 +55,14 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${fontSans.variable} ${inter.variable} min-h-screen bg-background font-sans antialiased max-w-2xl mx-auto py-12 sm:py-24 px-6`}
       >
-        {children}
+        <ThemeProvider attribute="class" defaultTheme="system">
+          <TooltipProvider delayDuration={0}>
+            {children}
+            <Navbar />
+          </TooltipProvider>
+        </ThemeProvider>
       </body>
     </html>
   );
